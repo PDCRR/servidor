@@ -48,7 +48,7 @@ public class MultiServer extends Thread{
                 System.out.print("Cliente ID:"+ ID+ ", socket:"+ socket+"; envia mensaje");
                 try{
                     //getDatos.verificarMensaje(MessageIn);}
-                    System.out.println(MessageIn);}
+                    System.out.println(": "+MessageIn);}
                 catch(Exception e){
                     e.printStackTrace();
                 }
@@ -57,7 +57,8 @@ public class MultiServer extends Thread{
             }
             
         }catch(IOException e){
-                System.out.println("P1"+e.getMessage());
+                System.out.println("Player id: "+ID+e.getMessage());
+                
         }
     }
 
